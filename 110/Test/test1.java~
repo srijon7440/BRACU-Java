@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class test1{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter row");
+    int row=sc.nextInt();
+    for(int r=1;r<=row;r++){
+      for(int sp=1;sp<=row-i;sp++){
+        System.out.print("*");
+      }
+    }
+  }
+}

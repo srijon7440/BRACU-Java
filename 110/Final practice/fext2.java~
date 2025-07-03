@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class fext2{
+  public static void modifyStrings(String s,String s1,String s2){
+    String st="";
+    int s1c=s1.length();
+    for(int i=0;i<s.length();i++){
+      int x=s1c
+      String st2="";
+      while(x>0){
+        int y=i;
+        st2+=s.charAt(y);
+        y++;
+        x--;
+      }
+      if(st2==s1){
+        st+=s2;
+        i++;
+      }
+      else st+=s.charAt(i);
+    }
+      System.out.print(st);
+  }
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter S:");
+    String s=sc.nextLine();
+    System.out.print("Enter S1:");
+    String s1=sc.nextLine();
+    System.out.print("Enter S2:");
+    String s2=sc.nextLine();
+    modifyStrings(s, s1, s2);
+  }
+}

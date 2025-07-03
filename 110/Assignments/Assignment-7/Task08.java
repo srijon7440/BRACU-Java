@@ -1,0 +1,28 @@
+//Task-08
+import java.util.Scanner;
+ public class Task08{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Please enter the length of array 1:");
+    int n=sc.nextInt();
+    int[] arr1=new int[n];   
+    System.out.println("Please enter the elements of the arr1:");
+    for(int i=0;i<arr1.length;i++) arr1[i]=sc.nextInt();
+    System.out.print("Please enter the length of array 2:");
+    int n2=sc.nextInt();
+    int[] arr2=new int[n2];
+    System.out.println("Please enter the elements of the arr2:");
+    for(int i=0;i<arr2.length;i++) arr2[i]=sc.nextInt();
+    int c=0;
+    for(int i=0;i<arr2.length;i++){
+    for(int j=0;j<arr1.length;j++){
+      if(arr2[i]==arr1[j]){
+        c++;
+        break;
+      }
+    }
+    }
+    if(c==n2) System.out.println("Array 2 is a subset of Array 1. ");
+    else System.out.println("Array 2 is not a subset of Array 1. ");
+  }
+}

@@ -1,0 +1,18 @@
+//Task-02
+import java.util.Scanner;
+ public class Task02{
+   public static void reverseDigits(int n){
+     if(n<10) System.out.println(n%10);
+     else{
+       System.out.println(n%10);
+       reverseDigits(n/10);
+     }
+   }
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in); 
+    System.out.print("N = ");
+    int n=sc.nextInt();
+    reverseDigits(n);
+  }
+ }
+    

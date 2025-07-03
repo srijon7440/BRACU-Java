@@ -1,0 +1,23 @@
+//Task-06
+public class Task06{
+  public static double calcTax(int x,int y){
+    if((x<18)||(y<10000)&&(z+x>y)) return 0.0;
+    else if(y>=10000&&y<=20000) return (7/100.0)*y;
+    else return (14.0/100)*y;
+  }
+//  public static void triArea(int x,int y,int z){
+//    
+//    }
+  }
+  public static void main(String[]args){
+    //==A==\\
+System.out.println("=============A==============");
+    double t = calcTax(16,20000);
+    System.out.println(t);
+    double t = calcTax(20,18000);
+    System.out.println(t);
+    //==B==\\
+System.out.println("=============B==============");
+    
+  }
+}

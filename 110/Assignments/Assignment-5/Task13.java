@@ -1,0 +1,20 @@
+//Task-13
+import java.util.Scanner;
+ public class Task13{
+  public static void main(String[] args){
+   Scanner sc=new Scanner(System.in);
+   System.out.print("Enter row:");
+   int row=sc.nextInt();
+     for(int r=1;r<=row;r++){
+       for(int i=1;i<=row-r;i++){
+       System.out.print(" ");
+     }
+     for(int j=1;j<=r;j++)
+         System.out.print(j);      
+     for(int l=r-1;l>0;l--)
+         System.out.print(l);
+     
+         System.out.println();
+   }
+  }
+ }

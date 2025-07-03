@@ -1,0 +1,16 @@
+//Task-03
+import java.util.Scanner;
+ public class Task03{
+   public static int sumDigits(int n){
+     if(n<10) return n;
+     else return n%10+sumDigits(n/10);
+   }
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in); 
+    System.out.print("N = ");
+    int n=sc.nextInt();
+    int x = sumDigits(n);
+    System.out.println(x);
+  }
+ }
+    

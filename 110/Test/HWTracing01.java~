@@ -1,0 +1,10 @@
+public class HWTracing01 {  
+    public static void main(String[] args) {
+        int x = 0, y = 0;
+        String sum = "0";
+        int a=5;
+    sum=sum+2+x+a;
+    System.out.println(sum);
+    }
+}
+

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class fext5{
+  public static int sep(int x){
+    int j=x/10;
+    int k=x%10;
+    return Math.pow(j,2)+Math.pow(k,2);
+  }
+  public static boolean ihn(int x){
+    int y=sep(x);
+    int z=sep(y);
+    if(z==1) return true;
+    else return false;
+  }
+  public static void main(String[]args){
+    System.out.print("Enter Number: ");
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    boolean check = ihn(n);
+    System.out.println(check);
+  }
+}

@@ -1,0 +1,27 @@
+//Task-05
+public class Task05{
+  //(A)
+  public static boolean isPrime(int x){
+    
+  }
+  //(B)
+  public static boolean isPerfect(int x){
+    
+  }
+  //(C)
+  public static int special_sum(int x){
+    
+  }
+  public static void main(String[]args){
+    //==A==
+System.out.println("=============A==============");
+    
+    //==B==
+System.out.println("=============B==============");
+    
+    //==C==
+System.out.println("=============C==============");
+    
+
+  }
+}

@@ -1,0 +1,29 @@
+//Task-15
+import java.util.Scanner;
+ public class Task15{
+  public static void main(String[] args){
+   Scanner sc=new Scanner(System.in);
+   System.out.print("Enter row:");
+   int row=sc.nextInt();
+   int n=row;
+     for(int r=1;r<=row/2+1;r++){
+       for(int i=1;i<r;i++){
+       System.out.print(" ");
+     }
+       for(int j=1;j<=n;j++){
+         System.out.print(j);
+       }
+       n-=2;
+       System.out.println();
+     }
+   int num=3;
+    for(int l=1;l<=row/2;l++){
+     for(int m=1;m<=row/2-l;m++)
+         System.out.print(" ");
+      for(int x=1;x<=num;x++)
+         System.out.print(x);
+          num+=2;
+           System.out.println();         
+   }
+  }
+ }

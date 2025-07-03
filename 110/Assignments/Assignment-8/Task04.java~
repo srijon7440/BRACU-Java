@@ -1,0 +1,9 @@
+//Task-04
+public class Task04{
+  //(A)
+
+  public static void main(String[]args){
+    //==A==
+System.out.println("=============A==============");
+  }
+}

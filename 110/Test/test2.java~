@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class test2{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter Row:");
+    int row=sc.nextInt();
+    int mid=row/2+1;
+     for(int r=1;r<=row;r++){
+       for(int c=1;c<=row;c++){
+         if(r==mid||c==mid) System.out.print("*");
+         else System.out.print(" ");
+       }System.out.println();
+     }
+  }
+}
+  

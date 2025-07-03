@@ -1,0 +1,23 @@
+//Task-10
+import java.util.Scanner;
+ public class Task10{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter row:");
+    int row=sc.nextInt();
+    int nsp=row;                
+    for(int i=1;i<=row;i++){
+      for(int j=1;j<nsp;j++){
+       System.out.print(" "); 
+      }nsp--;
+      for(int k=1;k<2*i;k++){
+        if(i==1||i==row)
+          System.out.print(k);
+        else if(k==1||k==2*i-1)
+          System.out.print(k);
+        else 
+          System.out.print(" ");
+      }System.out.println();
+    }
+  }
+}

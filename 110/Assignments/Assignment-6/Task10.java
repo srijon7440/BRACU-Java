@@ -1,0 +1,28 @@
+//Task-10
+import java.util.Scanner;
+ public class Task10{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter Name:");
+    String str1=sc.nextLine();
+    System.out.print("Enter Password:");
+    String str2=sc.nextLine();
+    String str3="";
+    int n=0;
+      for(int i=0;i<str2.length();i++){
+        char c1=str2.charAt(i);
+        for(int j=n;j<str1.length();j++){
+        char c2=str1.charAt(j);
+        if(c1==c2){
+          str3+=c1;
+          n++;
+        }
+        else break;
+        }
+      }
+        
+        if(str3.equals(str1)) System.out.print("Invalid");
+        else System.out.print("Valid");
+    
+  }
+}

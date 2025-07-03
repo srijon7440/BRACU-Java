@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class prime{
+  public static void main(String[] args){
+    Scanner sc =new Scanner(System.in);
+    System.out.print("Enter Number:");
+    int n=sc.nextInt();
+    boolean flag=true;
+      if(n==1) System.out.print("Nonprime!!");
+      for(int j=2;j<=n;j++){
+      for(int i=2;i*i<=j;i++){
+      if(n%i==0){
+        flag=false;
+        break;
+          }
+        }
+      if(!flag)break;
+      }if(flag)System.out.print("prime"); 
+       else System.out.print("Nonprime!!");
+    }
+  }
+                                      
+                           

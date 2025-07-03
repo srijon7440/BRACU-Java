@@ -1,0 +1,19 @@
+//Task-10
+ public class Task10{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int [] marks = {85, 90, 75, 44, 99};
+    String [] names = {"Bob", "Alice", "Max", "Marry", "Rosy"};
+    System.out.println("Sorted Array:");
+    for(int i=0;i<marks.length-1;i++){
+    for(int j=i+1;j<marks.length;j++){
+      if(arr[i]>marks[j]){
+        int temp = marks[i];
+        marks[i]=marks[j];
+        marks[j]=temp;
+      }
+    }
+    }
+    for(int i=0;i<mark.length;i++) System.out.println(marks[i]+" ");
+  }
+}

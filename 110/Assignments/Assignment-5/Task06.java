@@ -1,0 +1,27 @@
+//Task-06
+import java.util.Scanner;
+public class Task06{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter Number ");
+    int n=sc.nextInt();
+    int d=3;
+    for(int i=1;i<=n;i++){
+      for(int j=1;j<=n-i;j++){
+       System.out.print(" ");
+    }  
+      for(int k=1;k<=2*i-1;k++){
+       System.out.print(k);
+    }  System.out.println();
+   }
+    for(int l=1;l<n;l++){
+      for(int m=1;m<=l;m++){
+       System.out.print(" ");
+    }  
+      for(int p=1;p<=2*n-d;p++){
+       System.out.print(p);
+    }  d+=2;
+       System.out.println();
+   }
+  }
+ }
