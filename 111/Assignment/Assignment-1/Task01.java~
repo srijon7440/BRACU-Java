@@ -3,10 +3,15 @@ import java.util.Scanner;
   public static void main(String[]args){
     int count=0;
     Scanner sc =new Scanner(System.in);
-    System.out.pritn("Enter Number1 :");
+    System.out.print("Enter Number1 :");
     int n1=sc.nextInt();
-    System.out.pritn("Enter Number2 :");
+    System.out.print("Enter Number2 :");
     int n2=sc.nextInt();
+    if(n1>n2){
+      int temp=n1;
+      n1=n2;
+      n2=temp;
+    }
     for(int i=n1;i<=n2;i++){
       boolean flag=prime(i);
       if(flag==true) count++;
@@ -15,11 +20,10 @@ import java.util.Scanner;
   }
   public static boolean prime(int x){
     int count=0;
+    if(x<2) return false;
     for(int i=2;i<x;i++){
-      if(x%i==0) count++;
-      if(count>1){
+      if(x%i==0)
         return false;
-      }
     }
     return true;
   }
