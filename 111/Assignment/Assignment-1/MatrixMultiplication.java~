@@ -42,24 +42,5 @@ import java.util.Scanner;
       }
       System.out.println();
     }
-    //Multiplying A*AT
-    int row=M;
-    int col=M;
-    int[][] AAT=new int[row][col];
-    for(int i=0;i<row;i++){
-      for(int j=0;j<col;j++){
-        for(int k=0;k<N;k++){
-       AAT[i][j]+=A[i][k]*AT[k][j];
-        }
-      }
-    }
-    //printing AAT
-    System.out.println("Transpose A");
-    for(int i=0;i<row;i++){
-      for(int j=0;j<col;j++){
-       System.out.print(AAT[i][j]+"  ");
-      }
-      System.out.println();
-    }
   }
  }
