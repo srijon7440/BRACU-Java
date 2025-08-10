@@ -1,0 +1,30 @@
+//Task-03
+public class Reader{
+  public String name="New user";
+  public int capacity;
+  public int idx;
+  public String books[];
+  public String createReader(String n,int c){
+    name=n;
+    capacity=c;
+    books=new String[capacity];
+    return "A new reader is created!";
+  }
+  public void readerInfo(){
+    System.out.println("Name: "+name+
+                       "\nCapacity: "+capacity+
+                       "\nBooks: ");
+    if(idx==0) System.out.println("No books added yet");
+    else{
+      for(int i=0;i<capacity;i++){
+         System.out.println("Book "+(i+1)+": "+books[i]);
+      }
+    }
+  }
+  public void addBook(String s){
+    if(idx<capacity){
+      books[idx++]=s;
+    }
+    else System.out.println("No more capacity");
+  }
+}

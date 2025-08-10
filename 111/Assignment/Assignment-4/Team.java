@@ -1,0 +1,24 @@
+//Task04(Team)
+public class Team{
+  Player teamInfo[]=new Player[2];
+  public String tname;
+  public int idx;
+  Team(){
+  }
+  Team(String s){
+    tname=s;
+  }
+  public void updateName(String name){
+    tname=name;
+  }
+  public void addPlayer(Player x){
+    teamInfo[idx++]=x;
+  }
+  public void printDetail(){
+    System.out.println("Team: "+tname+"\nList of players:");
+    for(int i=0;i<idx;i++){
+      teamInfo[i].Detail();                      
+    }
+    
+  }
+}

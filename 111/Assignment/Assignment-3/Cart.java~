@@ -1,0 +1,23 @@
+public class Cart{
+  public int idx;
+  public int c;
+  public String[] item=new String[3];
+  public double[] price=new double[3];
+  public create_cart(int n){
+   c=n;
+  }
+  public void addItem(String s,double p){
+    item[idx]=s;
+    System.out.println(item[idx]+"added to cart 1."+
+                       "\nYou have "+(idx+1)+" item(s) in your cart now.");
+    price[idx]=p;
+  }
+  public void addItem(double p,String s){
+    item[idx]=s;
+    System.out.println(item[idx]+"added to cart 1."+
+                       "\nYou have "+(idx+1)+" item(s) in your cart now.");
+    price[idx]=p;
+  }
+  public void giveDiscount(){
+  }  
+}

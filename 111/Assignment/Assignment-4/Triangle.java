@@ -1,0 +1,45 @@
+//Task03
+public class Triangle{
+  public int x;
+  public int y;
+  public int z;
+  public int p;
+  public String type;
+  Triangle(int x,int y,int z){
+    this.x=x;
+    this.y=y;
+    this.z=z;
+  }
+  public void triangleDetails(){
+    p=(x+y+z);
+    if(x==y && y==z){
+      System.out.println("Three sides of the triangle are: 4, 4, 4");
+       System.out.println("Perimeter: "+p);
+       type="Equilateral";
+    }
+    else if(x!=y && y!=z && z!=x){
+      System.out.println("Three sides of the triangle are: "+
+                         x+", "+y+", "+z+"\nPerimeter: "+p);
+      type="Scalene";
+  }
+}
+  public String printTriangleType(){
+     return "This is an "+type+" Triangle.";
+    }
+  public void compareTriangles(Triangle t){
+    if(this!=t){
+      if(this.x==t.x && this.y==t.y && this.z==t.z){
+      System.out.println("Addresses are different but the sides of the triangles are equal.");
+      }
+      else{
+        if(this.p==t.p)
+          System.out.println("Only the perimeter of both triangles is equal.");
+        else
+          System.out.println("Addresses, length of the sides and perimeter all are different.");
+      }
+    }
+    else
+      System.out.println("These two triangle objects have the same address.");
+  }
+  
+}

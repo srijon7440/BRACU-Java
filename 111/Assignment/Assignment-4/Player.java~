@@ -1,0 +1,14 @@
+public class Player{
+  public String n;
+  public int a;
+  public int m;
+  Player(String n, int a, int m){
+    this.n=n;
+    this.a=a;
+    this.m=m;
+  }
+  public void Detail(){
+   System.out.println("Name: "+n+"\nAge: "+a+", Total Matches: "+m);
+                      
+  }
+}
