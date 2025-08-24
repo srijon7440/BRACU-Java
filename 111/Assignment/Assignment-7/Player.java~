@@ -1,0 +1,19 @@
+public class Player{
+  String name;
+  int jerseyNumber;
+  String country;
+  //constructor
+  Player(String n,String c,int n){
+    name=n;
+    jerseyNumber=n;
+    country=c;
+  }
+  static int total;
+  static void info(){
+  }
+  String player_detail(){
+    return "Player Name: "+name+
+           "Jersey Numbber: "+jerseyNumber+
+           "Country :"+country;
+  }
+}

@@ -1,0 +1,10 @@
+//Task04
+public class Spaceship{
+  public String name;
+  public int capacity;
+  Cargo list[]=new Cargo[100];
+  Spaceship(String name,int capacity){
+    this.name=name;
+    this.capacity=capacity;
+  }
+}

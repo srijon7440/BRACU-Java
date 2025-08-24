@@ -1,0 +1,23 @@
+//Task03
+public class Cargo{
+  //capacity
+  private static double cap=10.0;
+  public  static double capacity(){
+    return cap;
+  }
+  //constructor
+  public static int id;
+  public String content;
+  public double weight;
+  public String loaded="false";
+  Cargo(String n,double w){
+    content=n;
+    weight=w;
+    id++;
+  }
+  //details()
+  public void details(){
+   System.out.println("Cargo ID: "+id+", Contents: "+content+
+                      ",\nWeight: "+weight+", Loaded"+loaded);
+  }
+}

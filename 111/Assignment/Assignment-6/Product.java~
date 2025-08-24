@@ -1,0 +1,33 @@
+//Task01
+public class Product{
+  public String name="Unknown";
+  private double Price;
+  private int Quantity;
+  Product(){
+  }
+  public void displayInfo(){
+    System.out.println("Product Name: "+name+
+                       "\nPrice: "+Price);
+  }
+  Product(String name,double price){
+    this.name=name;
+    setPrice();
+  }
+  public void setQuantity(int n){
+    Quantity=n;
+  }
+  public void setPrice(double n){
+    Price=n;
+  }
+  public int getQuantity(){
+    return Quantity;
+  }
+  public int getPrice(){
+    return Price;
+  }
+  public void displayInfo(String s){
+    System.out.println("Product Name: "+name+
+                       "\nPrice: "+Price+
+                       "\nQuantity: "+Quantity);
+  }
+}

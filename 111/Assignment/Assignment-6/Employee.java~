@@ -1,0 +1,10 @@
+public class Employee{
+  private String name;
+  private String job;
+  private int id;
+  Employee(){
+    System.out.println("A default employee has been created");
+  }
+  Employee(String name,int id,String job){
+  }
+}

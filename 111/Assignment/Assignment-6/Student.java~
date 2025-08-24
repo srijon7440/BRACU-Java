@@ -1,0 +1,17 @@
+//Task02
+public class Student{
+  public String name;
+  public double cg;
+  private int id;
+  public void setId(int id){
+    this.id=id;
+  }
+  public int getId(){
+    return id;
+  }
+  Student(String name,int id,double cg){
+    this.name=name;
+    this.cg=cg;
+    setId(id);
+  }
+}
